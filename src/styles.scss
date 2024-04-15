@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import "../node_modules/primeflex/primeflex.min.css";
+@import "../node_modules/primeng/resources/themes/fluent-light/theme.css";
+@import "../node_modules/primeng/resources/primeng.min.css";
+
+html {
+  font-size: 16px !important;
+}
+
+body {
+  height: 100% !important;
+  margin: 0 !important;
+  font-family: Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+.p-toolbar {
+  border: none !important;
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+}
+
+.main-content {
+  margin-top: 71px !important;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: calc(100vh - 71px);
+}
