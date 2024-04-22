@@ -1,0 +1,45 @@
+[
+    {
+        "title": "Dashboard",
+        "icon": "pi-home",
+        "link": "./",
+        "color": "#ff7f0e"
+    },
+    {
+        "title": "Usuarios",
+        "icon": "pi-home",
+        "link": "./users",
+        "color": "#ff7f0e"
+    },
+    {
+        "title": "Usuario",
+        "icon": "pi-home",
+        "link": "./user",
+        "color": "#ff7f0e"
+    },
+    {
+        "title": "Statistics",
+        "icon": "pi-home",
+        "color": "#ff7f0e",
+        "subMenu": [
+            {
+                "title": "user",
+                "icon": "pi-home",
+                "link": "./user",
+                "color": "#ff7f0e"
+            },
+            {
+                "title": "Customers",
+                "icon": "pi-home",
+                "color": "#ff7f0e",
+                "link": "/customers"
+            }
+        ]
+    },
+    {
+        "title": "login",
+        "icon": "pi-home",
+        "link": "./auth/login",
+        "color": "#ff7f0e"
+    }
+]

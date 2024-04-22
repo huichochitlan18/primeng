@@ -30,7 +30,282 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "src/theme/theme-arya-blue.scss",
+                "bundleName": "arya-blue",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-arya-green.scss",
+                "bundleName": "arya-green",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-arya-orange.scss",
+                "bundleName": "arya-orange",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-arya-purple.scss",
+                "bundleName": "arya-purple",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-bootstrap4-dark-blue.scss",
+                "bundleName": "bootstrap4-dark-blue",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-bootstrap4-dark-purple.scss",
+                "bundleName": "bootstrap4-dark-purple",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-bootstrap4-light-blue.scss",
+                "bundleName": "bootstrap4-light-blue",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-bootstrap4-light-purple.scss",
+                "bundleName": "bootstrap4-light-purple",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-fluent-light.scss",
+                "bundleName": "fluent-light",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-dark-amber.scss",
+                "bundleName": "lara-dark-amber",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-dark-blue.scss",
+                "bundleName": "lara-dark-blue",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-dark-cyan.scss",
+                "bundleName": "lara-dark-cyan",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-dark-green.scss",
+                "bundleName": "lara-dark-green",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-dark-indigo.scss",
+                "bundleName": "lara-dark-indigo",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-dark-pink.scss",
+                "bundleName": "lara-dark-pink",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-dark-purple.scss",
+                "bundleName": "lara-dark-purple",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-dark-teal.scss",
+                "bundleName": "lara-dark-teal",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-light-amber.scss",
+                "bundleName": "lara-light-amber",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-light-blue.scss",
+                "bundleName": "lara-light-blue",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-light-cyan.scss",
+                "bundleName": "lara-light-cyan",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-light-green.scss",
+                "bundleName": "lara-light-green",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-light-indigo.scss",
+                "bundleName": "lara-light-indigo",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-light-pink.scss",
+                "bundleName": "lara-light-pink",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-light-purple.scss",
+                "bundleName": "lara-light-purple",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-light-teal.scss",
+                "bundleName": "lara-light-teal",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-luna-amber.scss",
+                "bundleName": "luna-amber",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-luna-blue.scss",
+                "bundleName": "luna-blue",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-luna-green.scss",
+                "bundleName": "luna-green",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-luna-pink.scss",
+                "bundleName": "luna-pink",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-md-dark-deeppurple.scss",
+                "bundleName": "md-dark-deeppurple",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-md-dark-indigo.scss",
+                "bundleName": "md-dark-indigo",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-md-light-deeppurple.scss",
+                "bundleName": "md-light-deeppurple",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-md-light-indigo.scss",
+                "bundleName": "md-light-indigo",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-mdc-dark-deeppurple.scss",
+                "bundleName": "mdc-dark-deeppurple",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-mdc-dark-indigo.scss",
+                "bundleName": "mdc-dark-indigo",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-mdc-light-deeppurple.scss",
+                "bundleName": "mdc-light-deeppurple",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-mdc-light-indigo.scss",
+                "bundleName": "mdc-light-indigo",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-nano.scss",
+                "bundleName": "nano",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-nova.scss",
+                "bundleName": "nova",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-nova-accent.scss",
+                "bundleName": "nova-accent",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-nova-alt.scss",
+                "bundleName": "nova-alt",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-rhea.scss",
+                "bundleName": "rhea",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-saga-blue.scss",
+                "bundleName": "saga-blue",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-saga-green.scss",
+                "bundleName": "saga-green",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-saga-orange.scss",
+                "bundleName": "saga-orange",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-saga-purple.scss",
+                "bundleName": "saga-purple",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-soho-dark.scss",
+                "bundleName": "soho-dark",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-soho-light.scss",
+                "bundleName": "soho-light",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-tailwind-light.scss",
+                "bundleName": "tailwind-light",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-vela-blue.scss",
+                "bundleName": "vela-blue",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-vela-green.scss",
+                "bundleName": "vela-green",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-vela-orange.scss",
+                "bundleName": "vela-orange",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-vela-purple.scss",
+                "bundleName": "vela-purple",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-viva-dark.scss",
+                "bundleName": "viva-dark",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-viva-light.scss",
+                "bundleName": "viva-light",
+                "inject": false
+              }
             ],
             "scripts": []
           },
@@ -39,13 +314,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
                 }
               ],
               "outputHashing": "all"

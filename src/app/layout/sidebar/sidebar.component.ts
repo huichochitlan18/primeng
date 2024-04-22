@@ -1,23 +1,32 @@
-import { Component, Input, ViewChild, inject } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, inject } from '@angular/core';
 import { AllPrimeNGModule } from '../../modules/primeng.module';
 import { Sidebar } from 'primeng/sidebar';
 import { SidebarService } from '../service/sidebar.service';
+import { HeaderComponent } from './header/header.component';
+import { Menu } from '../interface/menu.interface';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [AllPrimeNGModule],
+  imports: [AllPrimeNGModule, HeaderComponent],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+  styleUrl: './sidebar.component.scss',
 })
-export class SidebarComponent {
-
+export class SidebarComponent implements OnInit {
   public _sidebarService = inject(SidebarService);
   @ViewChild('sidebarRef') sidebarRef!: Sidebar;
+  menu: Menu = [];
 
-
-  closeCallback(e: any): void {
-    this.sidebarRef.close(e);
+  constructor(){
+    this.getMenu();
   }
-  
+  ngOnInit(): void {
+    // this.getMenu();
+  }
+
+  getMenu(){
+    this._sidebarService.menu().subscribe(menu=>{
+      this.menu = menu;
+    })
+  }
 }
