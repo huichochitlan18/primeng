@@ -40,25 +40,25 @@ export class Example2Component implements OnInit {
   }
 
   getProductsApiFilter(idCategory: number) {
-    console.log('from getProductsApiFilter');
     this._storeService.getProductsApi(idCategory).subscribe((products) => {
       this.prodcuts = products.map((x) => ({
         ...x,
         category: undefined,
         description: undefined,
       }));
+      console.log('from getProductsApiFilter');
       console.log(this.prodcuts);
     });
   }
 
   getProductsArrayFilter(idCategory: number) {
-    console.log('from getProductsArrayFilter');
     this._storeService
       .getProducts()
       .pipe(
         map((product) => product.filter((x) => x.category!.id === idCategory))
       )
       .subscribe((products) => {
+        console.log('from getProductsArrayFilter');
         console.log(products);
       });
   }

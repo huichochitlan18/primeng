@@ -27,9 +27,14 @@ body {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   height: calc(100vh - 71px);
+  width: 100%;
 }
 
 .p-button:focus:not(:focus-visible) {
   outline: none !important;
   box-shadow: none !important;
+}
+
+.grid {
+  width: 100% !important;
 }
