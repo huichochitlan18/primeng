@@ -1,11 +1,6 @@
 <p-toolbar>
   <div class="p-toolbar-group-start">
-    <button pButton icon="pi pi-plus" class="mr-2"></button>
-    <button pButton icon="pi pi-print" class="mr-2"></button>
-    <p-button
-      (click)="_sidebarService.updateSidebar()"
-      icon="pi pi-arrow-right"
-    ></p-button>
+    <p-button icon="pi pi-bars" [rounded]="true" [text]="true" (click)="_sidebarService.updateSidebar()"></p-button>
   </div>
   <div class="p-toolbar-group-center">
     <span class="p-input-icon-left">

@@ -4,29 +4,27 @@ import { Sidebar } from 'primeng/sidebar';
 import { SidebarService } from '../service/sidebar.service';
 import { HeaderComponent } from './header/header.component';
 import { Menu } from '../interface/menu.interface';
+import { MenuComponent } from './menu/menu.component';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [AllPrimeNGModule, HeaderComponent],
+  imports: [AllPrimeNGModule, HeaderComponent, MenuComponent],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
   public _sidebarService = inject(SidebarService);
   @ViewChild('sidebarRef') sidebarRef!: Sidebar;
   menu: Menu = [];
-
-  constructor(){
+  constructor() {
     this.getMenu();
   }
-  ngOnInit(): void {
-    // this.getMenu();
-  }
 
-  getMenu(){
-    this._sidebarService.menu().subscribe(menu=>{
+  getMenu() {
+    this._sidebarService.menu().subscribe((menu) => {
+      console.log(menu);
       this.menu = menu;
-    })
+    });
   }
 }

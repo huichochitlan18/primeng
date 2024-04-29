@@ -6,40 +6,30 @@
         "color": "#ff7f0e"
     },
     {
-        "title": "Usuarios",
-        "icon": "pi-home",
-        "link": "./users",
-        "color": "#ff7f0e"
-    },
-    {
-        "title": "Usuario",
-        "icon": "pi-home",
-        "link": "./user",
-        "color": "#ff7f0e"
-    },
-    {
-        "title": "Statistics",
+        "title": "Signals",
         "icon": "pi-home",
         "color": "#ff7f0e",
         "subMenu": [
             {
-                "title": "user",
-                "icon": "pi-home",
-                "link": "./user",
-                "color": "#ff7f0e"
-            },
-            {
-                "title": "Customers",
+                "title": "Example",
                 "icon": "pi-home",
                 "color": "#ff7f0e",
-                "link": "/customers"
+                "link": "./signals/example"
+            },
+            {
+                "title": "Example",
+                "icon": "pi-home",
+                "color": "#ff7f0e",
+                "link": "./signals/example-2"
+            },
+            {
+                "title": "Observables to Signals",
+                "icon": "pi-home",
+                "link": "./signals/observables-to-signals",
+                "color": "#ff7f0e"
             }
+            
         ]
-    },
-    {
-        "title": "login",
-        "icon": "pi-home",
-        "link": "./auth/login",
-        "color": "#ff7f0e"
     }
+    
 ]

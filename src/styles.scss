@@ -18,7 +18,7 @@ body {
   position: fixed !important;
   width: 100%;
   top: 0;
-  background-color: rgba(255,255,255,.7);
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
 }
 
@@ -27,4 +27,9 @@ body {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   height: calc(100vh - 71px);
+}
+
+.p-button:focus:not(:focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
 }

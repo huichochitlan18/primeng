@@ -1,0 +1,14 @@
+<div class="flex justify-content-center flex-wrap">
+    <div class="flex align-items-center justify-content-center w-4rem h-4rem font-bold m-2">
+
+    </div>
+</div>
+
+<button (click)="filter('semanal')">1</button>
+<button (click)="filter('quincenal')">2</button>
+<button (click)="filter('mensual')">3</button>
+@for (item of dataFilter(); track $index) {
+<p>{{ item }}</p>
+} @for (item of datos; track $index) {
+<p>{{ item }}</p>
+}

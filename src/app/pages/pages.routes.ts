@@ -1,8 +1,6 @@
 import { Routes } from '@angular/router';
 import { LayoutComponent } from '../layout/layout.component';
-import { HomeComponent } from './home/home.component';
-import { UserComponent } from './users/user/user.component';
-import { UsersComponent } from './users/users/users.component';
+import * as Pages from '.';
 
 export const pagesRoutes: Routes = [
   {
@@ -11,15 +9,19 @@ export const pagesRoutes: Routes = [
     children: [
       {
         path: '',
-        loadComponent: () => HomeComponent,
+        loadComponent: () => Pages.HomeComponent,
       },
       {
-        path: 'user',
-        loadComponent: () => UserComponent,
+        path: 'signals/example',
+        loadComponent: () => Pages.ExampleComponent,
       },
       {
-        path: 'users',
-        loadComponent: () => UsersComponent,
+        path: 'signals/example-2',
+        loadComponent: () => Pages.Example2Component,
+      },
+      {
+        path: 'signals/observables-to-signals',
+        loadComponent: () => Pages.ObservablesToSignalsComponent,
       },
       { path: '', redirectTo: '', pathMatch: 'full' },
     ],

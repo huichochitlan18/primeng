@@ -1,0 +1,32 @@
+
+<div class="p-grid">
+  <div class="p-col-3">
+    <form [formGroup]="category">
+      <p-dropdown
+        formControlName="idCategory"
+        [options]="categories"
+        optionLabel="name"
+        [style]="{ minWidth: '14rem' }"
+        placeholder="Select a category"
+        (ngModelChange)="selectCategory($event)"
+      ></p-dropdown>
+      <p-dropdown
+        formControlName="idProduct"
+        [options]="prodcuts"
+        optionLabel="title"
+        [style]="{ minWidth: '14rem' }"
+        placeholder="Select a product"
+        (ngModelChange)="selectProduct($event)"
+      ></p-dropdown>
+    </form>
+  </div>
+  <div class="p-col-3">
+    <pre>{{ categories | json }}</pre>
+  </div>
+  <div class="p-col-3">
+    <pre>{{ prodcuts | json }}</pre>
+  </div>
+  <div class="p-col-3">
+    <pre>{{ product | json }}</pre>
+  </div>
+</div>

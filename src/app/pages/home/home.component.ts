@@ -46,21 +46,9 @@ export class HomeComponent {
   ];
 
   cities1: any[] = [];
-
   cities2: any[] = [];
-
   city1: any = null;
-
   city2: any = null;
-
-  data = {
-    periodo: ['semanal', 'quincenal', 'mensual'],
-    limite: ['a', 'b', 'c'],
-  };
-
-  #dataSignal: WritableSignal<string[]> = signal<string[]>([]);
-  dataFilter: WritableSignal<string[]> = signal<string[]>([]);
-  datos: string[] = [];
 
   themeService = inject(ThemeService);
   breakpointObserver = inject(BreakpointObserver);
@@ -73,8 +61,6 @@ export class HomeComponent {
   }
 
   ngOnInit(): void {
-    this.#dataSignal.set(this.data.periodo);
-    console.log(this.#dataSignal());
     this.themeService.listThemes().subscribe(x=>{
       this.themes = x;
     });
@@ -85,18 +71,5 @@ export class HomeComponent {
   changeTheme(theme: string) {
     this.themeService.switchTheme(theme);
   }
-  filter(periodo: string) {
-    const filters = {
-      semanal: (x: any) => x,
-      quincenal: (x: any) => !x.includes('a'),
-      mensual: (y: any) => y === 'c',
-    };
-    if (!filters[periodo as keyof typeof filters]) {
-      throw new Error(`Periodo desconocido: ${periodo}`);
-    }
-    const filterFunction = filters[periodo as keyof typeof filters];
-
-    this.dataFilter.update(() => this.data.limite.filter(filterFunction));
-    this.datos = this.data.limite.filter(filterFunction);
-  }
+  
 }
